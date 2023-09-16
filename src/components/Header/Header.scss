@@ -1,6 +1,31 @@
 @import "../../index.scss";
-
 header {
-  height: 3rem;
-  background-color: grey;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $header-green;
+
+  .icon {
+    height: 6rem;
+  }
+  .header-link-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2.8rem;
+    padding-right: 2.8rem;
+
+    .header-link {
+      font-family: $font-regular;
+      font-size: 1.8rem;
+      text-decoration: none;
+      // padding-right: 2.8rem;
+
+      color: $medium-green;
+      font-weight: 400;
+      &:hover {
+        color: $light-pistachio-green;
+      }
+    }
+  }
 }
