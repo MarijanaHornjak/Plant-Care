@@ -1,0 +1,81 @@
+@import "../../index.scss";
+
+.plants {
+  background-color: $light-pistachio-green;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .container-center {
+    width: 80%;
+    min-width: 50rem;
+
+    h1 {
+      color: $header-green;
+      font-family: $font-regular;
+      text-align: center;
+      padding: 4rem 0;
+      font-size: 3.2rem;
+    }
+    .subtitle {
+      color: $medium-green;
+      text-align: center;
+      padding-bottom: 4rem;
+    }
+    .plants-section {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.4rem;
+
+      .single-plant {
+        display: flex;
+        gap: 1rem;
+        flex: 2 1;
+        background-color: $background-green;
+        padding: 1rem;
+
+        .plant-image-container {
+          height: 100%;
+
+          img {
+            object-fit: cover;
+            width: 14rem;
+            min-width: 10rem;
+            height: 100%;
+          }
+        }
+        .plant-info-container {
+          border-left: 0.2rem solid $light-pistachio-green;
+          padding-left: 0.5rem;
+          h2 {
+            font-family: $font-regular;
+            color: $header-green;
+            padding-bottom: 0.2rem;
+          }
+          h3 {
+            color: $medium-green;
+            font-family: $font-cursive;
+            font-style: italic;
+            font-weight: 400;
+            padding-bottom: 1rem;
+          }
+          .single-info {
+            padding-bottom: 0.3rem;
+            border-bottom: 0.2rem solid $light-pistachio-green;
+            padding: 0.2rem;
+
+            .plant-icon {
+              color: $medium-green;
+              font-size: 1.6rem;
+            }
+            p {
+              font-family: $font-regular;
+              color: $header-green;
+              font-size: 1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

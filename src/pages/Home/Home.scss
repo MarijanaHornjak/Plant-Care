@@ -18,6 +18,7 @@ main {
     .leaf-3 {
       position: absolute;
       width: 5rem;
+      filter: drop-shadow(0 0 0.3rem rgb(37, 37, 37));
     }
     .leaf-1 {
       left: 3rem;
@@ -30,7 +31,7 @@ main {
       transform: rotate(87deg);
     }
     .leaf-3 {
-      top: 26rem;
+      top: 22rem;
       transform: rotate(277deg);
     }
     h1 {
@@ -39,19 +40,47 @@ main {
       color: $header-green;
     }
     h3 {
-      text-align: center;
       font-size: 2rem;
       font-weight: 500;
       color: $medium-green;
       padding-top: 2rem;
     }
+    .caption-link {
+      padding-top: 8rem;
+
+      h4 {
+        font-size: 1.8rem;
+        color: $header-green;
+      }
+      .home-link-container {
+        padding-top: 4rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        a {
+          text-decoration: none;
+          color: $light-pistachio-green;
+          background-color: $medium-green;
+          width: 6rem;
+          text-align: center;
+          padding: 0.2rem 0;
+          font-size: 1.4rem;
+          transition: all 0.3s ease-in;
+          &:hover {
+            transform: scale(1.1);
+            color: $header-green;
+          }
+        }
+      }
+    }
   }
   .home-image-container {
     width: 60%;
-    height: auto;
+    height: calc(100vh - 3rem);
 
     img {
       width: 100%;
+      height: calc(100vh - 3rem);
     }
   }
 }

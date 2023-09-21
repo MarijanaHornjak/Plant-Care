@@ -1,17 +1,25 @@
 import React from "react";
+import { useFetchPlants } from "../../fetchPlants";
+import "./Plants.scss";
+import SinglePlant from "./SinglePlant";
 
 const Plants = () => {
+  const { loading, plants } = useFetchPlants();
+  console.log(loading, plants);
   return (
-    <div>
-      <h1>Plants</h1>
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro,
-        ducimus. Odit maiores velit ratione id, quas voluptatum voluptate
-        pariatur! Dolorum, assumenda explicabo! Earum excepturi eaque aperiam
-        maxime ab perferendis consectetur amet voluptate nisi aut! Voluptates
-        quidem sit est placeat rerum!
-      </p>
-    </div>
+    <main className="plants">
+      <div className="container-center">
+        <h1>Cultivating Green Dreams</h1>
+        <h2 className="subtitle">
+          Explore the World of Plant Growth and Horticulture
+        </h2>
+        <section className="plants-section">
+          {plants.map((plant) => {
+            return <SinglePlant key={plant.id} plant={plant} />;
+          })}
+        </section>
+      </div>
+    </main>
   );
 };
 

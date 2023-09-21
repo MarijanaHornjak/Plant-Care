@@ -18,9 +18,10 @@ const Home = () => {
         </h3>
         <div className="caption-link">
           <h4>Let's begin your journey</h4>
-
-          <Link to="/plants">Plants</Link>
-          <Link to="/care">Care</Link>
+          <div className="home-link-container">
+            <Link to="/plants">Plants</Link>
+            <Link to="/care">Care</Link>
+          </div>
         </div>
       </div>
       <div className="home-image-container">
