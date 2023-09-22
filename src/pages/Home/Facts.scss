@@ -1,0 +1,20 @@
+@import "../../index.scss";
+
+.facts {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50rem;
+
+  .facts-container {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    article {
+      .fact-title {
+        display: flex;
+      }
+    }
+  }
+}

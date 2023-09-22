@@ -3,7 +3,6 @@ import { useFetchPlants } from "../../fetchPlants";
 import "./Plants.scss";
 import SinglePlant from "./SinglePlant";
 import Categories from "./Categories";
-
 const Plants = () => {
   const { loading, plants, typeOfPlants } = useFetchPlants();
 

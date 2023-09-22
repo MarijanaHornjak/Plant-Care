@@ -9,7 +9,7 @@
   padding-bottom: 4rem;
 
   .container-center {
-    width: 80%;
+    width: 90%;
     min-width: 50rem;
 
     h1 {
@@ -32,7 +32,6 @@
       .single-plant {
         display: flex;
         gap: 1rem;
-        flex: 2 1;
         background-color: $background-green;
         padding: 1rem;
 
@@ -97,6 +96,26 @@
       transition: all 0.5s ease-in-out;
       &:hover {
         background-color: $header-green;
+      }
+    }
+  }
+  @media screen and (max-width: 54em) {
+    .container-center {
+      .plants-section {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
+      }
+    }
+  }
+  @media screen and (max-width: 34em) {
+    .container-center {
+      .plants-section {
+        .single-plant {
+          flex-direction: column;
+          img {
+            object-fit: cover;
+          }
+        }
       }
     }
   }
