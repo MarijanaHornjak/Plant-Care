@@ -2,18 +2,53 @@
 
 .facts {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 50rem;
+  padding: 4rem 0 8rem 0;
+  background-color: $background-green;
+  h1 {
+    font-family: $font-regular;
+    color: $medium-green;
+    font-size: 3rem;
+    padding-bottom: 4rem;
+  }
 
   .facts-container {
     width: 80%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
 
-    article {
+    .single-fact {
+      background-color: $light-pistachio-green;
+      height: 10rem;
+      padding: 1rem;
+      position: relative;
       .fact-title {
-        display: flex;
+        gap: 0.1rem;
+        h3 {
+          display: flex;
+          align-items: center;
+          gap: 0.3rem;
+          color: $medium-green;
+          font-family: $font-regular;
+          font-weight: 400;
+          font-size: 1.4rem;
+          padding-bottom: 0.5rem;
+        }
+      }
+      p {
+        color: $medium-green;
+        font-family: $font-regular;
+        font-size: 1rem;
+      }
+      .needle {
+        position: absolute;
+        top: 0;
+        right: 0;
+        color: $medium-green;
+        font-size: 2rem;
       }
     }
   }
