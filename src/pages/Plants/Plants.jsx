@@ -1,11 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import { useFetchPlants } from "../../fetchPlants";
 import "./Plants.scss";
 import SinglePlant from "./SinglePlant";
+import Categories from "./Categories";
 
 const Plants = () => {
-  const { loading, plants } = useFetchPlants();
-  console.log(loading, plants);
+  const { loading, plants, typeOfPlants } = useFetchPlants();
+
+  const [selectedType, setSelectedType] = useState("all");
+
+  const handleFilterChange = (type) => {
+    setSelectedType(type);
+    // console.log(selectedType);
+  };
+
+  const filteredPlants =
+    selectedType === "all"
+      ? plants
+      : plants.filter((plant) => plant.typeOfPlant === selectedType);
+
+  // console.log(loading, plants);
   return (
     <main className="plants">
       <div className="container-center">
@@ -13,8 +27,9 @@ const Plants = () => {
         <h2 className="subtitle">
           Explore the World of Plant Growth and Horticulture
         </h2>
+        <Categories handleFilterChange={handleFilterChange} />
         <section className="plants-section">
-          {plants.map((plant) => {
+          {filteredPlants.map((plant) => {
             return <SinglePlant key={plant.id} plant={plant} />;
           })}
         </section>

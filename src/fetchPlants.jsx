@@ -16,6 +16,12 @@ export const useFetchPlants = () => {
   const [loading, setLoading] = useState(true);
   const [plants, setPlants] = useState([]);
 
+  const typeOfPlants = [
+    "all",
+    ...new Set(plants.map((plant) => plant.typeOfPlant)),
+  ];
+  // console.log(typeOfPlants);
+
   const getData = async () => {
     try {
       const response = await client.getEntries({
@@ -60,7 +66,7 @@ export const useFetchPlants = () => {
 
   useEffect(() => {
     getData();
-  }, []);
+  }, [plants]);
 
-  return { loading, plants };
+  return { loading, plants, typeOfPlants };
 };
