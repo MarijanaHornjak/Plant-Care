@@ -10,7 +10,7 @@
 
   .container-center {
     width: 90%;
-    min-width: 50rem;
+    min-width: 30rem;
 
     h1 {
       color: $header-green;
@@ -112,8 +112,16 @@
       .plants-section {
         .single-plant {
           flex-direction: column;
-          img {
-            object-fit: cover;
+          .plant-image-container {
+            height: 20rem;
+            margin: 0 auto;
+          }
+          .plant-info-container {
+            border-left: none;
+            h2,
+            h3 {
+              text-align: center;
+            }
           }
         }
       }
