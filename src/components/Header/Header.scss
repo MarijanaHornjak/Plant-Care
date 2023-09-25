@@ -4,6 +4,7 @@ header {
   justify-content: space-between;
   align-items: center;
   background-color: $header-green;
+  position: relative;
 
   .icon {
     height: 6rem;
@@ -26,6 +27,60 @@ header {
       &:hover {
         color: $light-pistachio-green;
       }
+    }
+    .menu-icon {
+      display: none;
+      font-family: $font-regular;
+      font-size: 1.8rem;
+      text-decoration: none;
+      cursor: pointer;
+      color: $medium-green;
+      font-weight: 400;
+      &:hover {
+        color: $light-pistachio-green;
+      }
+    }
+  }
+
+  @media screen and (max-width: 33.5em) {
+    .header-link-container {
+      .header-link {
+        display: none;
+      }
+      .menu-icon {
+        display: block;
+      }
+    }
+  }
+  .dropdown-menu {
+    position: absolute;
+    top: 6rem;
+    right: 0;
+
+    width: 100%;
+    z-index: 1;
+    height: calc(100vh - 3rem);
+    gap: 1rem;
+    align-items: center;
+    .header-link {
+      font-family: $font-regular;
+      font-size: 1.8rem;
+      text-decoration: none;
+
+      color: $medium-green;
+      font-weight: 400;
+    }
+    .drop-down-link-container {
+      background-color: $header-green;
+      height: 18rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+    }
+    .drop-down-layout {
+      height: 100%;
     }
   }
 }
