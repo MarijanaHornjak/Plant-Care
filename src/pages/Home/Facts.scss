@@ -10,19 +10,20 @@
   h1 {
     font-family: $font-regular;
     color: $medium-green;
-    font-size: 3rem;
+    font-size: 4.6rem;
     padding-bottom: 4rem;
   }
 
   .facts-container {
-    width: 80%;
+    width: 70%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 3rem;
 
     .single-fact {
       background-color: $light-pistachio-green;
-      height: 10rem;
+      height: 12rem;
+
       padding: 1rem;
       position: relative;
       .fact-title {
@@ -34,14 +35,14 @@
           color: $medium-green;
           font-family: $font-regular;
           font-weight: 400;
-          font-size: 1.4rem;
+          font-size: 1.8rem;
           padding-bottom: 0.5rem;
         }
       }
       p {
         color: $medium-green;
         font-family: $font-regular;
-        font-size: 1rem;
+        font-size: 1.2rem;
       }
       .needle {
         position: absolute;

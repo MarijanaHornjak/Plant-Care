@@ -7,7 +7,7 @@ header {
   position: relative;
 
   .icon {
-    height: 6rem;
+    height: 8rem;
   }
   .header-link-container {
     display: flex;
@@ -18,7 +18,7 @@ header {
 
     .header-link {
       font-family: $font-regular;
-      font-size: 1.8rem;
+      font-size: 2rem;
       text-decoration: none;
       // padding-right: 2.8rem;
 
@@ -42,7 +42,7 @@ header {
     }
   }
 
-  @media screen and (max-width: 33.5em) {
+  @media screen and (max-width: 43em) {
     .header-link-container {
       .header-link {
         display: none;
@@ -62,6 +62,7 @@ header {
     height: calc(100vh - 3rem);
     gap: 1rem;
     align-items: center;
+
     .header-link {
       font-family: $font-regular;
       font-size: 1.8rem;
