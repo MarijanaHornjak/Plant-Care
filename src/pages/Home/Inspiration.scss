@@ -1,0 +1,69 @@
+@import "../../index.scss";
+.inspiration-section {
+  background-color: $light-pistachio-green;
+  padding: 4rem;
+  h1 {
+    text-align: center;
+    padding: 4rem 2rem;
+    font-size: 4.6rem;
+    font-family: $font-regular;
+    color: $medium-green;
+  }
+  .inspiration-container {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    gap: 0.5rem;
+    .section-image-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      img {
+        flex: 1;
+        max-height: 14rem;
+        object-fit: cover;
+      }
+    }
+    .section-text-container {
+      padding: 0 2rem;
+
+      h2 {
+        font-size: 2.4rem;
+        font-family: $font-regular;
+        color: $medium-green;
+        padding-bottom: 1rem;
+      }
+      h3 {
+        font-size: 1.4rem;
+        font-family: $font-regular;
+        color: $dark-green;
+        padding-bottom: 1rem;
+      }
+      p {
+        font-size: 1.3rem;
+        color: $header-green;
+        font-family: $font-regular;
+        padding-bottom: 4rem;
+      }
+      a {
+        text-decoration: none;
+        font-size: 1.4rem;
+        color: $light-pistachio-green;
+        background-color: $medium-green;
+        padding: 0.8rem 1.6rem;
+      }
+    }
+  }
+
+  @media screen and (max-width: 75em) {
+    .inspiration-container {
+      flex-direction: column;
+    }
+  }
+  @media screen and (max-width: 25em) {
+    h1 {
+      font-size: 4.2rem;
+      text-align: center;
+    }
+  }
+}

@@ -22,8 +22,8 @@
 
     .single-fact {
       background-color: $light-pistachio-green;
-      height: 12rem;
-
+      // height: 12rem;
+      min-height: 14rem;
       padding: 1rem;
       position: relative;
       .fact-title {
@@ -51,6 +51,21 @@
         color: $medium-green;
         font-size: 2rem;
       }
+    }
+  }
+  @media screen and (max-width: 50.4em) {
+    .facts-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media screen and (max-width: 27.25em) {
+    .facts-container {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  @media screen and (max-width: 25em) {
+    h1 {
+      font-size: 4.2rem;
     }
   }
 }

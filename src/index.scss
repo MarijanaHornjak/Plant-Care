@@ -8,6 +8,16 @@
 html {
   font-size: 62.5%;
 }
+@media screen and (max-width: 57.25em) {
+  html {
+    font-size: 50%;
+  }
+}
+@media screen and (max-width: 37.5em) {
+  html {
+    font-size: 45%;
+  }
+}
 
 // Color variables
 

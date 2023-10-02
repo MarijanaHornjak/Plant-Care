@@ -4,6 +4,7 @@ import HomeImage from "../../assets/hands.jpg";
 import Leaf from "../../assets/Leaf.png";
 import { Link } from "react-router-dom";
 import Facts from "./Facts";
+import Inspiration from "./Inspiration";
 
 const Home = () => {
   return (
@@ -31,6 +32,7 @@ const Home = () => {
         </div>
       </div>
       <Facts />
+      <Inspiration />
     </main>
   );
 };
