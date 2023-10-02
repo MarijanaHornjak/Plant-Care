@@ -1,13 +1,17 @@
-import React from 'react'
+import React from "react";
+import "./Care.scss";
+import { MdOutlineConstruction } from "react-icons/md";
 
 const Care = () => {
   return (
-    <div>
-      
-      <h1>Care about your plants</h1>
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda similique, est recusandae cupiditate reiciendis maiores voluptas natus, a voluptatem ullam autem deserunt quisquam odio inventore culpa itaque. Id nobis suscipit ea? Aliquam aperiam ut excepturi ipsa, repudiandae, voluptas harum sit et illo soluta recusandae dolore porro enim possimus velit? Tempora.</p>
-    </div>
-  )
-}
+    <main className="care-section">
+      <div className="care-container">
+        <h1>Coming soon...</h1>
+        <h3>Section in progress...</h3>
+        <MdOutlineConstruction className="care-icon" />
+      </div>
+    </main>
+  );
+};
 
-export default Care
+export default Care;
