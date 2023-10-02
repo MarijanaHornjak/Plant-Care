@@ -54,7 +54,7 @@ header {
   }
   .dropdown-menu {
     position: absolute;
-    top: 6rem;
+    top: 8rem;
     right: 0;
 
     width: 100%;
@@ -65,7 +65,7 @@ header {
 
     .header-link {
       font-family: $font-regular;
-      font-size: 1.8rem;
+      font-size: 3rem;
       text-decoration: none;
 
       color: $medium-green;
@@ -73,12 +73,12 @@ header {
     }
     .drop-down-link-container {
       background-color: $header-green;
-      height: 18rem;
+      height: 70%;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      gap: 1rem;
+      gap: 3rem;
     }
     .drop-down-layout {
       height: 100%;
