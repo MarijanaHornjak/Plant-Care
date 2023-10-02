@@ -79,9 +79,18 @@ header {
       justify-content: center;
       align-items: center;
       gap: 3rem;
+      animation: dropdown 0.6s ease-in-out;
     }
     .drop-down-layout {
       height: 100%;
+    }
+    @keyframes dropdown {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
     }
   }
 }
