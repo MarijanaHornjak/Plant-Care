@@ -1,20 +1,21 @@
 import React from "react";
+import "./About.scss";
 
 const About = () => {
   return (
-    <div>
-      <h1>About</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
-        adipisci voluptatum fugiat odit et, unde aliquid ex, dicta ratione ab
-        minima! Accusamus, ab. Repellat corporis est odio soluta totam
-        repellendus, et excepturi provident eveniet dolorum omnis culpa.
-        Veritatis odit quisquam tempora ea neque nesciunt ad unde corporis?
-        Itaque nostrum cupiditate suscipit! Voluptas esse harum debitis minus
-        dolores laborum architecto quidem saepe nobis dignissimos porro
-        suscipit, vero adipisci ipsa, itaque animi!
-      </p>
-    </div>
+    <main className="about-section">
+      <div className="about-container">
+        <h1>About section</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
+          adipisci, rerum suscipit, aliquam voluptatibus tempora sunt, quibusdam
+          consectetur vel officia unde quae eos ex nihil nulla inventore
+          dolorum! Porro deserunt saepe laboriosam similique. Velit, nostrum,
+          eaque tempora deserunt similique iste, quos ratione a et aut beatae?
+          Modi molestias voluptatibus veritatis!
+        </p>
+      </div>
+    </main>
   );
 };
 

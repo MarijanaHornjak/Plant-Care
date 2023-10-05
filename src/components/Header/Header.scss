@@ -4,7 +4,9 @@ header {
   justify-content: space-between;
   align-items: center;
   background-color: $header-green;
-  position: relative;
+  position: sticky;
+  top: 0;
+  z-index: 2;
 
   .icon {
     height: 8rem;
