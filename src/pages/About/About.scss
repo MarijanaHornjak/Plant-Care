@@ -1,14 +1,44 @@
 @import "../../index.scss";
 .about-section {
-  height: 100vh;
+  background-color: $light-pistachio-green;
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
+  padding: 5rem 0;
+  // min-height: 100vh;
+
   .about-container {
-    max-width: 70%;
+    width: 80%;
+    min-width: 20rem;
     display: flex;
-    flex-direction: column;
     gap: 2rem;
-    align-items: center;
+    // border: 2px solid red;
+    flex-wrap: wrap;
+    margin: auto;
+
+    .about-image-container {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      img {
+        max-width: 33%;
+        height: auto;
+      }
+    }
+    .about-text-container {
+      padding: 1rem;
+      flex-grow: 1;
+      h1 {
+        font-size: 4rem;
+        color: $header-green;
+        font-family: $font-regular;
+        padding-bottom: 2rem;
+      }
+      p {
+        font-size: 1.8rem;
+        font-family: $font-regular;
+        padding-bottom: 1rem;
+      }
+    }
   }
 }
