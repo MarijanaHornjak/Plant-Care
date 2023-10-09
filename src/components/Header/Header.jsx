@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "./Header.scss";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { AiOutlineClose } from "react-icons/ai";
@@ -18,18 +18,18 @@ const Header = () => {
       </Link>
 
       <div className="header-link-container">
-        <Link to="/plants" className="header-link">
+        <NavLink to="/plants" className="header-link">
           Plants
-        </Link>
-        <Link to="/care" className="header-link">
+        </NavLink>
+        <NavLink to="/care" className="header-link">
           Care
-        </Link>
-        <Link to="/" className="header-link">
+        </NavLink>
+        <NavLink to="/" className="header-link">
           Home
-        </Link>
-        <Link to="/about" className="header-link">
+        </NavLink>
+        <NavLink to="/about" className="header-link">
           About
-        </Link>
+        </NavLink>
         {dropdownMenu ? (
           <AiOutlineClose className="menu-icon" onClick={toggleDropdownMenu} />
         ) : (

@@ -29,6 +29,9 @@ header {
       &:hover {
         color: $light-pistachio-green;
       }
+      &.active {
+        border-bottom: 2px solid $medium-green;
+      }
     }
     .menu-icon {
       display: none;
