@@ -6,11 +6,13 @@ import About from "./pages/About/About";
 import Plants from "./pages/Plants/Plants";
 import Care from "./components/Care/Care";
 import Home from "./pages/Home/Home";
+import ErrorPage from "./pages/ErrorPage/ErrorPage";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Layout />,
+    errorElement: <ErrorPage />,
     children: [
       { index: true, element: <Home /> },
       { path: "about", element: <About /> },

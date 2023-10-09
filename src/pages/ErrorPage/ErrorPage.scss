@@ -1,0 +1,30 @@
+@import "../../index.scss";
+
+.error-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  background-color: $light-pistachio-green;
+
+  img {
+    max-width: 60rem;
+    height: auto;
+    min-width: 10rem;
+  }
+  h3 {
+    font-size: 3rem;
+    color: $medium-green;
+    font-family: $font-regular;
+    margin-bottom: 2rem;
+  }
+  a {
+    background-color: $medium-green;
+    color: $light-pistachio-green;
+    font-size: 1.6rem;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    font-family: $font-regular;
+  }
+}
